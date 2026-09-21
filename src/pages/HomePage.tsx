@@ -128,7 +128,7 @@ function HomePage() {
             <Reveal className="mt-16">
               <Link
                 to="/about#current-partners"
-                className="group flex flex-col gap-8 border-l-2 border-gold bg-light-gray p-8 transition-colors duration-200 hover:bg-navy/[0.04] sm:flex-row sm:items-center sm:gap-10 lg:p-10"
+                className="group flex flex-col gap-8 border-l-2 border-gold bg-light-gray p-8 transition-colors duration-200 hover:bg-light-gray-dark sm:flex-row sm:items-center sm:gap-10 lg:p-10"
               >
                 <span className="flex shrink-0 items-center">
                   {partners.map((partner, i) => (
