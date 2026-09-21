@@ -32,7 +32,10 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build -- --base=/New-BACP-Website/
+        # Served from the apex custom domain (see public/CNAME), so the site
+        # lives at the root — not under a /<repo>/ project subpath. Vite's
+        # default base is already "/", so no --base override is needed.
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
